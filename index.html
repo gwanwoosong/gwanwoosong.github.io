@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             padding: 0;
             background-color: white;
         }
+
         header {
             background-color: white;
             color: #333;
@@ -26,6 +28,7 @@
             align-items: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .header-content {
             width: 100%;
             max-width: 1400px;
@@ -34,97 +37,119 @@
             align-items: center;
             padding: 0 20px;
         }
+
         header h1 {
             margin: 0;
             font-size: 24px;
         }
+
         nav {
             display: flex;
         }
+
         nav a {
             color: #333;
             margin: 0 15px;
             text-decoration: none;
             font-size: 16px;
         }
+
         nav a:last-child {
             margin-right: 0;
         }
+
         nav a:hover {
             color: #007BFF;
         }
+
         .container {
             max-width: 1400px;
             margin: 80px auto 20px auto;
             padding: 20px;
             background-color: white;
         }
+
         .profile {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
+
         .profile img {
             border-radius: 50%;
             width: 300px;
             height: 300px;
             justify-self: center;
         }
+
         .profile-info {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
+
         .profile-info a:hover {
             text-decoration: underline;
         }
+
         .section {
             margin-bottom: 30px;
         }
+
         .section:not(.profile) h2 {
             color: #333;
             font-size: 30px;
         }
+
         #introduction {
             border-radius: 8px;
             padding: 40px;
             margin-bottom: 20px;
             font-size: 22px;
         }
+
         #introduction p {
             line-height: 1.6;
             color: #050505;
         }
+
         #introduction ul {
             padding-left: 20px;
         }
+
         #introduction li {
             margin-bottom: 10px;
             color: #161616;
             line-height: 1.4;
         }
+
         #introduction a {
             color: #3478f6;
             text-decoration: none;
         }
+
         #introduction a:hover {
             text-decoration: none;
             color: #3478f6;
         }
+
         .profile-info h2 {
             margin: 0;
             font-size: 38px;
             font-weight: bold;
         }
+
         .profile-info p {
             margin: 5px 0;
             font-size: 20px;
         }
+
         .profile-info a {
             color: #007BFF;
             text-decoration: none;
             margin-right: 10px;
         }
+
         footer {
             background-color: #fff;
             color: #333;
@@ -135,15 +160,19 @@
             bottom: 0;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
+
         footer a {
             color: #007BFF;
             text-decoration: none;
             margin: 0 10px;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
-        .publication-item, .project-item {
+
+        .publication-item,
+        .project-item {
             background-color: #fff;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
@@ -152,55 +181,75 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
-        .publication-item:hover, .project-item:hover {
+
+        .publication-item:hover,
+        .project-item:hover {
             transform: translateY(-5px);
         }
-        .publication-item h3, .project-item h3 {
+
+        .publication-item h3,
+        .project-item h3 {
             color: #21333a;
             margin-top: 0;
             font-size: 23px;
         }
-        .publication-item p, .project-item p {
+
+        .publication-item p,
+        .project-item p {
             font-size: 20px;
         }
-        .publication-info, .project-info {
+
+        .publication-info,
+        .project-info {
             font-style: italic;
             color: #666;
             margin-bottom: 10px;
         }
-        .publication-links a, .project-links a {
+
+        .publication-links a,
+        .project-links a {
             display: inline-block;
             margin-right: 10px;
             color: #007BFF;
             text-decoration: none;
         }
-        .publication-links a:hover, .project-links a:hover {
+
+        .publication-links a:hover,
+        .project-links a:hover {
             text-decoration: underline;
         }
+
         @media (max-width: 1140px) {
-            .header-content, .container {
+
+            .header-content,
+            .container {
                 padding: 0 20px;
             }
         }
+
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
             }
+
             header h1 {
                 font-size: 20px;
             }
+
             nav a {
                 font-size: 14px;
                 margin: 0 10px;
             }
+
             .profile {
                 grid-template-columns: 1fr;
             }
+
             .profile img {
                 margin-bottom: 10px;
             }
         }
-        
+
         /* 프로젝트 이미지와 텍스트 레이아웃 */
         .project-with-image {
             display: grid;
@@ -208,41 +257,42 @@
             gap: 30px;
             align-items: center;
         }
-        
+
         .project-image {
             text-align: center;
         }
-        
+
         .project-image img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .project-content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
         }
-        
+
         .project-content h3 {
             margin-top: 0;
         }
-        
+
         @media (max-width: 768px) {
             .project-with-image {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            
+
             .project-image {
                 order: -1;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -263,7 +313,7 @@
             <div class="profile-info">
                 <h2>Gwanwoo Song</h2>
                 <div class="profile-info-item">
-                    <p>Undergraduate, Computer Science</p>
+                    <p>MS/PhD Student, Computer Science</p>
                     <p>Yonsei University</p>
                 </div>
                 <p>
@@ -275,24 +325,39 @@
         </div>
 
         <div id="introduction" class="section">
-            <p>I am a undergraduate student at Yonsei University majoring in Computer Science. Currently, I'm tackling challenges in reinforcement learning and robotics, advised by <a href="https://youngwoon.github.io/youngwoon" target="_blank">Prof. Youngwoon Lee</a>.</p>
-            
-            <p>Prior to this, I worked as a research intern at <a href="https://langlab.yonsei.ac.kr/" target="_blank">LangAGI lab</a>, conducting research on LLM-based web agents.</p>
+            <p>Hello! I'm an MS/PhD student at Yonsei University, advised by <a
+                    href="https://youngwoon.github.io/youngwoon" target="_blank">Prof. Youngwoon Lee</a>. My research
+                interests include reinforcement learning and its applications to real-world problems. Currently, I'm
+                working on offline reinforcement learning, with a focus on leveraging large-scale datasets.</p>
+
+            <p>Prior to this, I worked as a research intern at <a href="https://langlab.yonsei.ac.kr/"
+                    target="_blank">LangAGI lab</a>, conducting research on LLM-based web agents.</p>
 
         </div>
-        
+
         <div id="publications" class="section">
             <h2>Publications</h2>
             <div class="publication-item">
+
                 <div style="display: grid; grid-template-columns: 3fr 7fr; gap: 30px; align-items: center;">
                     <div style="text-align: center;">
-                        <img src="webagent_fig.svg" alt="Web Agent Figure" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="webagent_fig.svg" alt="Web Agent Figure"
+                            style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                     </div>
                     <div>
-                        <h3>Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation</h3>
-                        <p class="publication-info">Hyeongjoo Chae, Namyoung Kim, Kai Tzu-iunn Ong, Minju Kwak, <span style="color: #007bff;">Gwanwoo Song</span>, Jihoon Kim, Seonghwan Kim, Dongha Lee, Jinyoung Yeo</p>
+                        <h3>Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation
+                        </h3>
+                        <p class="publication-info">Hyeongjoo Chae, Namyoung Kim, Kai Tzu-iunn Ong, Minju Kwak, <span
+                                style="color: #007bff;">Gwanwoo Song</span>, Jihoon Kim, Seonghwan Kim, Dongha Lee,
+                            Jinyoung Yeo</p>
                         <p><em>Preprint</em></p>
-                        <p class="publication-description">We propose a World-model-augmented (WMA) web agent for improved decision-making in long-horizon tasks. Our study reveals that current LLMs lack world models, leading to suboptimal performance in web navigation. To address this, we introduce a transition-focused observation abstraction method, which uses natural language descriptions to highlight key state changes between time steps.  Our emperical results show that our world models enhance agents' policy selection without additional training, offering superior cost- and time-efficiency compared to recent tree-search-based agents.</p>
+                        <p class="publication-description">We propose a World-model-augmented (WMA) web agent for
+                            improved decision-making in long-horizon tasks. Our study reveals that current LLMs lack
+                            world models, leading to suboptimal performance in web navigation. To address this, we
+                            introduce a transition-focused observation abstraction method, which uses natural language
+                            descriptions to highlight key state changes between time steps. Our emperical results show
+                            that our world models enhance agents' policy selection without additional training, offering
+                            superior cost- and time-efficiency compared to recent tree-search-based agents.</p>
                         <div class="publication-links">
                             <a href="https://arxiv.org/abs/2410.13232">Paper</a>
                             <a href="https://github.com/kyle8581/WorldModelforWebNav" target="_blank">Code</a>
@@ -305,7 +370,7 @@
         <div id="projects" class="section">
             <h2>Projects</h2>
 
-            
+
             <div class="project-item project-with-image">
                 <div class="project-image">
                     <img src="agent_hak_fig.svg" alt="AI Agent for Finance Risk Detection">
@@ -314,10 +379,14 @@
                     <div>
                         <h3>AI Agent for Finance Risk Detection</h3>
                         <p class="project-info">YBIGTA x UPSTAGE AI Agent Hakathon 2025</p>
-                        <p class="project-description">We developed a RAG-based agent that helps users identify potential risks in financial products.
-                            To support this, we collected financial dispute cases and legal documents to build a structured database.
-                            When a user inputs a financial product, the agent highlights potentially risky sentences in a PDF viewer.
-                            Additionally, users can ask follow-up questions, such as simulations of possible future outcomes or inquiries about related financial information.</p>
+                        <p class="project-description">We developed a RAG-based agent that helps users identify
+                            potential risks in financial products.
+                            To support this, we collected financial dispute cases and legal documents to build a
+                            structured database.
+                            When a user inputs a financial product, the agent highlights potentially risky sentences in
+                            a PDF viewer.
+                            Additionally, users can ask follow-up questions, such as simulations of possible future
+                            outcomes or inquiries about related financial information.</p>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/longway13/FinanceGuard" target="_blank">Code</a>
@@ -332,8 +401,12 @@
                     <div>
                         <h3>Visualizing Global Health Risks: Smoking, Drinking, and Cancer Rates</h3>
                         <p class="project-info">2024-1 Data Visualization Course Project</p>
-                        <p class="project-description">We collected and visualized time-series data on organ-specific cancer incidence, smoking, and alcohol consumption across countries. The interface includes an interactive human body diagram—when a user clicks on an organ, related scatter plots and line charts appear, showing cancer incidence alongside relevant lifestyle factors.
-                            For visualizing country-level trends, we used a grid cartogram to present the data in an interactive and intuitive way.</p>
+                        <p class="project-description">We collected and visualized time-series data on organ-specific
+                            cancer incidence, smoking, and alcohol consumption across countries. The interface includes
+                            an interactive human body diagram—when a user clicks on an organ, related scatter plots and
+                            line charts appear, showing cancer incidence alongside relevant lifestyle factors.
+                            For visualizing country-level trends, we used a grid cartogram to present the data in an
+                            interactive and intuitive way.</p>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/Dongjae0324/infovis" target="_blank">Code</a>
@@ -348,9 +421,12 @@
                     <div>
                         <h3>University Chatbot and Course Search Engine</h3>
                         <p class="project-info">AWS-YONSEI 2023 Winter Program</p>
-                        <p class="project-description">We developed a chatbot using data from a university community platform and a course search engine based on Yonsei University's course catalog.
-                            The chatbot leverages RAG with vector similarity search to provide appropriate responses to users.
-                            The course search engine achieves fast inference by building an inverted index for efficient retrieval.</p>
+                        <p class="project-description">We developed a chatbot using data from a university community
+                            platform and a course search engine based on Yonsei University's course catalog.
+                            The chatbot leverages RAG with vector similarity search to provide appropriate responses to
+                            users.
+                            The course search engine achieves fast inference by building an inverted index for efficient
+                            retrieval.</p>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/AWS-egongz/Main" target="_blank">Code</a>
@@ -368,4 +444,5 @@
         </div>
     </div>
 </body>
+
 </html>
